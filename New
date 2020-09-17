@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Tree Houes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="menubar">
+        <div class="container">
+            <div class="logo">
+                <h1>New Tree Houes</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">หน้าเเรก</a>
+                </li>
+                <li>
+                    <a href="All products.html">สินค้าทั้งหมด</a>
+                </li>
+                <li>
+                    <a href="About.html">เกี่ยวกับเรา</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+   
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img/bg.jpg" style="width:100%">
+                      <div class="text">New Tree Houes</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img/bg2.jpg" style="width:100%">
+                      <div class="text">New Tree Houes</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img/bg3.jpg" style="width:100%">
+                      <div class="text">New Tree Houes</div>
+                    </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="info1">
+        <div class="container">
+            <div class="info1_area">
+                <img src="img/pic1.png" alt="">
+                <div class="info1_text">
+                    <h1>WELCOME TO New Tree Houes </h1>
+                    <p>ร้านขายต้นไม้ออนไลน์ ที่คัดสรรต้นไม้คุณภาพ ไม่ว่าจะเป็น ไม้ดอก ไม้ประดับ ไม้ผล ไม้ยืนต้นไม้แนวรั้ว ให้เลือกมากมาย ส่งตรงถึงหน้าบ้าน
+                        มีบริการจัดส่งทั่วประเทศ โดยอยากให้ทุกคนร่วมกันปลูกต้นไม้เพื่ออนุรักษ์สิ่งแวดล้อม เพิ่มพื้นที่สีเขียว โดยทางเราขอเป็นส่วนหนึ่งในการมอบอนาคตของโลกและชีวิตที่ดีขึ้นของทุกคน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="clearfix"></div>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact_area">
+                <h1>ติดต่อเรา</h1>
+                <form>
+                    <label>Your Name</label><br>
+                    <input type="text" placeholder="Your Name"><br>
+                    <label>Your Email</label><br>
+                    <input type="email" placeholder="Your Email"><br>
+                    <label>Your Subject</label><br>
+                    <input type="text" placeholder="Your Subject"><br>
+                    <label>Your Message</label><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+                    <button>send</button><br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Copyright &copy; 2020 | Thanakit</p>
+    </footer>
+    
+</body>
+</html>
